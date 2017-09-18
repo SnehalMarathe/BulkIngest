@@ -1,3 +1,41 @@
-<p>
-  header works!
-</p>
+<header>
+  <div class="header__burger-menu-icon">
+    <a href="javascript:;"><i class="fa fa-bars" aria-hidden="true"></i></a>
+  </div>
+  <div class="header__logo">
+    <img src="https://mediaservices.viacom.com/Content/images/vms-header-logo.png?version=2017.7.25.1" />
+  </div>
+  <h1 class="page-header">Search</h1>
+  <ul class="header__rt-menu-items ">
+    <!---->
+    <li>
+      <a href="#"> 
+        <i class="fa fa-archive" aria-hidden="true"></i>                          
+    </a>
+    </li>
+    <li>
+      <a href="#"> 
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <span class="topbar-badge animated rubberBand">5</span>                            
+    </a>
+    </li>
+    <li>
+      <a href="#"> 
+      <i class="fa fa-user" aria-hidden="true"></i>                                                     
+    </a>
+    </li>
+  </ul>
+  <ul class="unstyled-list clearfix">
+    <li class="header__search">
+      <ul class=" unstyled-list clearfix">
+        <li class="header__search__search-box clearfix">
+          <a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <form id="search-form">
+            <input type="search" placeholder="Enter Barcode, DSID or any search term..." id="search-query" name="search-query" autocomplete="off"
+              onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Barcode, DSID or any search term...' ">
+          </form>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</header>

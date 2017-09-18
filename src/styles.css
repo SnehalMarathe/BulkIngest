@@ -1,1 +1,258 @@
 /* You can add global styles to this file, and also import other style files */
+/* Helper Clasess are prefixed by 'h-' */
+@import"../node_modules/font-awesome/css/font-awesome.css";
+@import"../node_modules/primeng/resources/primeng.css";
+@import"../node_modules/roboto-fontface/css/roboto/roboto-fontface.css";
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAEDF1;
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, app-root, .h-full-height{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.ui-g-1, .ui-g-2, .ui-g-3, .ui-g-4, .ui-g-5, .ui-g-6, .ui-g-7, .ui-g-8, .ui-g-9, .ui-g-10, .ui-g-11, .ui-g-12 {
+    padding:0 8px;
+}
+.ui-g-nopad{
+    padding:0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+
+html, body, app-root, .h-full-height{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.h-preview__thumbnail{
+    display: block;
+    width: 100px;
+    height: 57px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.h-preview__thumbnail img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* EndOf Helper Classes */
+
+.h-outer{
+    height: calc(100% - 36px);
+}
+.v-outer vertical-split-separator,
+.h-outer horizontal-split-separator {
+    background-color: transparent;
+    border-left: none;
+    cursor: ew-resize;
+    position: relative;
+}
+
+.h-outer horizontal-split-separator {
+    cursor: ns-resize;
+    border: none;
+}
+.v-outer vertical-split-separator:hover,
+.h-outer horizontal-split-separator:hover {
+    background-color: #e1e5ea;
+}
+.v-outer vertical-split-separator .handle,
+.h-outer horizontal-split-separator .handle{
+    width: 4px;
+    height: 35px;
+    background-color: rgba(90,107,130,0.3);
+    position: absolute;
+    top: calc(50% - 18px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.h-outer horizontal-split-separator .handle{
+    transform: rotate(90deg);
+}
+/*header related classes will come here*/
+header {
+    transition: left .3s;    
+    height: 56px;
+    background-color: #132841;	
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 101;  
+    padding:8px 16px; 
+}
+
+.page-header{
+margin:8px 0;
+color: #FFFFFF;	
+font-size: 18px;	
+line-height: 40px;
+font-weight:normal;
+float:left;
+padding-left:16px;
+border-left:1px solid  rgba(89,134,173,0.4);
+line-height:24px;
+}
+.header__burger-menu-icon{
+float:left;
+width:30px;
+margin-right:8px;
+
+}
+.header__burger-menu-icon a{
+font-size:24px;
+color:#5986AD;
+line-height:42px;
+}
+.ui-menu .ui-menuitem-parent, .ui-menu .ui-menuitem{
+    width:100%!important;
+    float:none!important;
+}
+.header__logo{
+    width: 90px;
+    float: left;
+   
+}
+.header__search {
+    display: inline-block;
+    width: 344px;
+    margin-left: 5px;
+    float:right;
+}
+.header__search__search-box {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.header__search__search-box a {
+    display: inline-block;
+    position: absolute;
+    top:1px;
+    right:2px;
+    background-color: #1C334F;   
+}
+.header__search__search-box input[type="search"] {
+    border: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    border: 1px solid rgba(89,134,173,0.4);	
+    border-radius: 4px;	
+    background-color: #1C334F;
+    color: #ffffff!important;
+    width: 100%;
+    padding: 8px;
+    margin-top: 0;
+    font-weight: 500;
+    height:40px;
+}
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header__search__search-box i {
+    font-size: 18px;
+    padding: 8px;
+    color: #5986AD;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+}
+.header__rt-menu-items, .header__rt-menu-items > li, .header__rt-menu-items > li > a {
+    display: inline-block;
+    height: 100%;
+}
+.header__rt-menu-items {
+    float: right;
+    margin: 0 0 0 8px;
+    padding:8px 0 8px 0;
+    list-style-type: none;
+}
+.header__rt-menu-items > li {
+    float: right;
+    position: relative;
+    margin:0px 8px;
+}
+ .header__rt-menu-items > li .topbar-icon {
+    font-size: 36px;
+    color: #ffffff;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.header__rt-menu-items > li > a {
+    position: relative;
+    display: block;   
+    color: #5986AD;	
+    font-family: FontAwesome;	
+    font-size: 20px!important;	
+    line-height: 20px!important;
+}
+.header__rt-menu-items > li > a:hover{
+    color:#ffffff;    
+}
+.header__rt-menu-items > li > a > i {
+    font-size: 20px!important;	
+    line-height: 24px!important;
+}
+.header__rt-menu-items > li > a > .fa-user:before {
+    font-size: 24px!important;	
+  
+}
+
+.header__rt-menu-items > li > a .topbar-badge {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: #E91E63;
+    color: #ffffff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 2px 4px;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+app-search-panel{
+    display: block;
+    height: 100%;
+    padding: 0 16px;
+}
+app-filter-panel, app-search-resultpanel{
+    padding:16px 0;
+}
