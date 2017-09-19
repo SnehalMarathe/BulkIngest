@@ -482,18 +482,16 @@ p-inputswitch .ui-state-default {
 
 /* VMS table */
 
-.vms-table .ui-datatable .ui-datatable-scrollable-body{
-    overflow-x: hidden;
-}
 
 .vms-table .ui-datatable-scrollable-header tr th {
     background-color: #DEE3EA;
-    border-width: 0 !important;
+    border-width: 0 ;
     color: #132841;
     font-size: 14px !important;
     padding: 12px 8px;
     text-align: left;
     font-weight: 400 !important;
+    border-right:2px solid #D7DEE6;
 }
 
 .vms-table .ui-datatable-scrollable-body tr td{
@@ -504,12 +502,12 @@ p-inputswitch .ui-state-default {
     vertical-align: middle;
     padding: 3px 8px 4px;
     border: none; 
-    display: -webkit-box;
     margin: 0 auto;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    border-right:2px solid #D7DEE6;
 }
 
 .vms-table .ui-datatable-scrollable-body tr{
@@ -538,5 +536,7 @@ p-inputswitch .ui-state-default {
     display: block;
     font-size: 14px;
 }
-
+.ui-datatable .ui-column-resizer{
+    width: 2px;	opacity: 0.3;	background-color: #D7DEE6;
+}
 /* endOf VMS table */
