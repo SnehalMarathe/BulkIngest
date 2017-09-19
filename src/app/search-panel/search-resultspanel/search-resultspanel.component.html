@@ -4,16 +4,16 @@
   <div class="clearfix"></div>
 </div>
 <div class="card h-full-height">
-  <p-tabView [activeIndex]="index" (onChange)="handleChange($event)">
-    <p-tabPanel header="Asset" [selected]="selectedTab === 0">
+  <p-tabView>
+    <p-tabPanel header="Asset" [selected]="true">
       <app-asset-results class="vms-table "></app-asset-results>
 
     </p-tabPanel>
-    <p-tabPanel header="Clip" [selected]="selectedTab === 1">
+    <p-tabPanel header="Clip" >
       <app-clip-results></app-clip-results>
 
     </p-tabPanel>
-    <p-tabPanel header="Image" [selected]="selectedTab === 2">
+    <p-tabPanel header="Image" >
       <app-image-results></app-image-results>
     </p-tabPanel>
   </p-tabView>

@@ -6,9 +6,9 @@ import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./asset-results.component.css']
 })
 export class AssetResultsComponent implements OnInit {
-
+  
   data: any[] = [];
-
+  
   constructor(private el:ElementRef) {
     this.data =
     [
