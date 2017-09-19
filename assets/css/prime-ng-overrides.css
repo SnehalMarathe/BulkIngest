@@ -431,6 +431,7 @@ p-inputswitch .ui-state-default {
     border-radius: 2px;
     width: 14px;
     line-height: 1.35;
+    background:#ffffff;
 }
 
 /* <-- Checkbox */
