@@ -1,3 +1,20 @@
-<p>
-  search-resultspanel works!
-</p>
+<div class="section-title">
+  <h2> Search Results for <span class="bold-text"> “madonna” </span> </h2>
+  <span class="section__other-detail"> Total Items: 300 </span>
+  <div class="clearfix"></div>
+</div>
+<div class="card h-full-height">
+  <p-tabView [activeIndex]="index" (onChange)="handleChange($event)">
+    <p-tabPanel header="Asset" [selected]="selectedTab === 0">
+      <app-asset-results class="vms-table "></app-asset-results>
+
+    </p-tabPanel>
+    <p-tabPanel header="Clip" [selected]="selectedTab === 1">
+      <app-clip-results></app-clip-results>
+
+    </p-tabPanel>
+    <p-tabPanel header="Image" [selected]="selectedTab === 2">
+      <app-image-results></app-image-results>
+    </p-tabPanel>
+  </p-tabView>
+</div>

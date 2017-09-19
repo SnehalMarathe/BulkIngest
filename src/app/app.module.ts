@@ -17,6 +17,9 @@ import { HeaderComponent } from './header/header.component';
 import { FilterPanelComponent } from './search-panel/filter-panel/filter-panel.component';
 import { SearchResultspanelComponent } from './search-panel/search-resultspanel/search-resultspanel.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
+import { AssetResultsComponent } from './search-panel/search-resultspanel/asset-results/asset-results.component';
+import { ImageResultsComponent } from './search-panel/search-resultspanel/image-results/image-results.component';
+import { ClipResultsComponent } from './search-panel/search-resultspanel/clip-results/clip-results.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SearchPanelComponent } from './search-panel/search-panel.component';
     HeaderComponent,
     FilterPanelComponent,
     SearchResultspanelComponent,
-    SearchPanelComponent
+    SearchPanelComponent,
+    AssetResultsComponent,
+    ImageResultsComponent,
+    ClipResultsComponent
   ],
   imports: [
     BrowserModule,

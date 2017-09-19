@@ -1,0 +1,12 @@
+<p-dataTable [value]="data" scrollable="true" [(selection)]="selectedCars2" resizableColumns="true" [scrollHeight]="calcH()" [scrollWidth]="calcW()">
+    <p-column [style]="{'width':'38px'}" selectionMode="multiple"></p-column>
+    <p-column field="Preview" header="Preview #" [sortable]="true" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Content Type" header="Content Type" [sortable]="true" [style]="{'width':'90px'}"></p-column>
+    <p-column field="DSID" header="DSID" [sortable]="true" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Title" header="Title" [sortable]="true" [style]="{'width':'250px'}"></p-column>
+    <p-column field="Content Owner" header="Content Owner" [sortable]="true" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Channel" header="Channel" [sortable]="true" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Encoding Status" header="Encoding Status" [sortable]="true" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Entered Date" header="Entered </br> Date" [sortable]="true" [style]="{'width':'80px'}"></p-column>
+    <p-column field="Content" header="Content" [sortable]="true" [style]="{'width':'100px'}"></p-column>
+</p-dataTable>

@@ -35,29 +35,19 @@ html, body, app-root, .h-full-height{
   .clearfix:after {
     clear: both;
   }
-
+.bold-text{
+    font-weight:600;
+}
 html, body, app-root, .h-full-height{
     position: relative;
     display: block;
     height: 100%;
 }
 
-.h-preview__thumbnail{
-    display: block;
-    width: 100px;
-    height: 57px;
-    border: 1px solid grey;
-    border-radius: 3px;
-}
 
-.h-preview__thumbnail img{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
 
 /* EndOf Helper Classes */
-
+/*splitter related classes starts here*/
 .h-outer{
     height: calc(100% - 36px);
 }
@@ -93,6 +83,8 @@ html, body, app-root, .h-full-height{
 .h-outer horizontal-split-separator .handle{
     transform: rotate(90deg);
 }
+/* EndOf splitter related Classes */
+
 /*header related classes will come here*/
 header {
     transition: left .3s;    
@@ -122,7 +114,7 @@ width:30px;
 margin-right:8px;
 
 }
-.header__burger-menu-icon a{
+.header__burger-menu-icon a i{
 font-size:24px;
 color:#5986AD;
 line-height:42px;
@@ -179,16 +171,16 @@ line-height:42px;
     padding: 8px;
     color: #5986AD;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.header__search__search-box::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ffffff;
 }
-::-moz-placeholder { /* Firefox 19+ */
+.header__search__search-box::-moz-placeholder { /* Firefox 19+ */
   color: #ffffff;
 }
-:-ms-input-placeholder { /* IE 10+ */
+.header__search__search-box:-ms-input-placeholder { /* IE 10+ */
   color: #ffffff;
 }
-:-moz-placeholder { /* Firefox 18- */
+.header__search__search-box:-moz-placeholder { /* Firefox 18- */
   color: #ffffff;
 }
 .header__rt-menu-items, .header__rt-menu-items > li, .header__rt-menu-items > li > a {
@@ -248,7 +240,7 @@ line-height:42px;
     font-size: 12px;
     line-height: 12px;
 }
-
+/* EndOf header related Classes */
 app-search-panel{
     display: block;
     height: 100%;
@@ -256,4 +248,18 @@ app-search-panel{
 }
 app-filter-panel, app-search-resultpanel{
     padding:16px 0;
+}
+.section-title{
+    margin:16px 0;
+}
+.section-title h2{
+    color: #333A44;	font-family: Roboto;	font-size: 18px;	line-height: 21px; font-weight:normal; float:left; text-overflow: ellipsis; width:70%; display:inline-block;
+}
+.section__other-detail{
+color: #333A44;	font-family: Roboto;	font-size: 14px;	line-height: 16px; width:30%;  display:inline-block; float:right;
+font-weight:normal; text-align:right;
+}
+
+app-search-panel .ui-tabview-panels {
+    height: calc(100% - 180px);
 }
