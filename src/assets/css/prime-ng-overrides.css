@@ -1,0 +1,542 @@
+/* --> Splitter Overrides */
+
+/**{
+    border: 1px solid red !important;
+}*/
+
+.h-outer{
+    height: calc(100% - 36px);
+}
+
+.v-outer vertical-split-separator,
+.h-outer horizontal-split-separator {
+    background-color: transparent;
+    border-left: none;
+    cursor: ew-resize;
+    position: relative;
+}
+
+.h-outer horizontal-split-separator {
+    cursor: ns-resize;
+    border: none;
+}
+
+.content-details .v-outer vertical-split-separator,
+.content-details .v-outer vertical-split-separator:hover{
+    background-color: transparent;
+    cursor: default;
+}
+
+.v-outer vertical-split-separator:hover,
+.h-outer horizontal-split-separator:hover {
+    background-color: #e1e5ea;
+}
+.v-outer vertical-split-separator .handle,
+.h-outer horizontal-split-separator .handle{
+    width: 4px;
+    height: 35px;
+    background-color: rgba(90,107,130,0.3);
+    position: absolute;
+    top: calc(50% - 18px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.h-outer horizontal-split-separator .handle{
+    transform: rotate(90deg);
+}
+
+/* <-- endOf Splitter Overrides */
+
+/* --> p-tree Overrides */
+
+p-tree{
+    display: block;
+}
+
+p-tree .ui-tree{
+    height: 100%;
+    width: 100%;
+}
+
+
+.ui-chkbox{
+    margin-top: -1px;
+}
+
+.ui-tree-container > p-treenode:first-child > .ui-treenode > .ui-treenode-content .ui-chkbox-box:after {
+    height: 25px;
+    top: 8px;
+}
+
+.ui-tree .ui-chkbox .ui-chkbox-icon {
+    margin-left: 0;
+}
+
+.ui-tree .ui-treenode{
+    position: relative;
+    padding: 0 0 4px;
+    display: block;
+}
+
+.ui-tree .ui-tree-toggler {
+    color: #616C7D;
+    font-size: 14px;
+    width: 16px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    height: 20px;
+    line-height: 1.5;
+}
+
+.ui-treenode-label > span {
+    display: block;
+}
+
+.ui-chkbox-icon.fa.fa-check,
+.ui-chkbox-icon.fa.fa-minus {
+    background-color: #1BBAE1;
+    color: #fff;
+    border: none;
+    font-size: 10px;
+    line-height: 1.35;
+    padding-left: 2.25px; 
+}
+
+.ui-chkbox-icon.fa.fa-minus{
+    line-height: 1.5;
+    padding-left: 3px;
+}
+
+.ui-tree .fa-caret-down:before {
+    margin-left: -3px;
+}
+
+.ui-tree .ui-chkbox .ui-chkbox-box:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 1px;
+    margin-left: -10px;
+    top: 16px;
+    background: #D2DCE6;
+}
+
+.ui-tree .ui-chkbox .ui-chkbox-box:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 39px;
+    margin-left: -10px;
+    top: -6px;
+    background: #D2DCE6;
+}
+
+p-treenode:last-child > .ui-treenode > .ui-treenode-content > .ui-chkbox > .ui-chkbox-box:after {
+    height: 23px;
+}
+
+li.ui-treenode .ui-treenode-content{
+    position: relative;
+}
+
+ul.ui-treenode-children {
+    border-left: 1px solid #D2DCE6;
+    padding-left: 9px !important;
+    margin-left: 6px !important;
+}
+
+p-treenode:last-child > .ui-treenode > ul.ui-treenode-children { 
+    border-left: none;
+}
+
+p-treenode:first-child li.ui-treenode .ui-treenode-content:before,
+p-treenode:last-child li.ui-treenode .ui-treenode-content:after {
+    display: none;
+}
+
+/* <-- endOf p-tree overrides */
+
+/* --> p-tabview Overrides */
+
+.ui-tabview{
+    padding: 0;
+    height: 100%;
+}
+
+ul.ui-tabview-nav.ui-widget-header.ui-corner-all {
+    padding: 0;
+    background: #f9fafc;
+    border-bottom: 1px solid #d2dce6;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.ui-tabview.ui-tabview-top>.ui-tabview-nav > li{
+    top: 0;
+    margin: 0;
+    padding: 0 8px;
+    float: initial;
+    display: inline-block;
+    height: 42px;
+    visibility: visible;
+    position: static;
+}
+
+.ui-tabview.ui-tabview-top>.ui-tabview-nav > li.overflown,
+.ui-tabview.ui-tabview-top>.ui-tabview-nav > li.overflown .dropdown{
+    visibility: hidden;
+}
+
+.ui-tabview .ui-tabview-nav li a{
+    padding: 12px 4px 11px;
+    border-bottom: 3px solid transparent;
+    color: #333A44;
+    opacity: .7;
+    font-weight: 500;
+    transition: .2s ease-in all;
+}
+
+.ui-tabview .ui-tabview-nav li a:hover{
+    opacity: 1;
+}
+
+.ui-tabview .ui-tabview-nav li.ui-state-active a{
+    opacity: 1;
+    border-bottom: 3px solid #1BBAE1;
+}
+
+.ui-tabview-panels {
+    height: calc(100% - 48px);
+}
+
+.ui-tabview .ui-tabview-panel {
+    height: 100%;
+    background: #FFF;
+}
+
+.tab-overflow-list{
+    position: absolute;
+    border: 1px solid #d2dce6;
+    border-top: none;
+    position: absolute;
+    background: #f9fafc;
+    right: 0;
+    margin-top: 1px;
+}
+
+.tab-overflow-list > li{
+    display: none;
+}
+.tab-overflow-list > li:first-child{
+    border-top: none;
+}
+.tab-overflow-list > li.overflown{
+    display: block;
+    border-top: 1px solid #d2dce6;
+    padding: 0 8px;
+    float: none;
+    display: block;
+}
+
+.tab-overflow {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background: #f9fafc
+}
+
+.tab-overflow-icon{
+    padding: 16px;
+    height: 42px;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    border: 1px solid #f9fafc; /*#f9fafc*/
+    visibility: hidden;
+}
+
+.tab-overflow-icon.shown{
+    visibility: visible;
+}
+
+.tab-overflow a{
+    opacity: .7;
+    transition: .2s ease-in opacity;
+}
+
+.tab-overflow > ul{
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.tab-overflow a:hover{
+    opacity: 1;
+}
+
+ul.tab-overflow-list li a {
+    display: block;
+    text-decoration: none;
+    color: #333A44;
+    padding: 13px 4px 11px;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+}
+
+ul.tab-overflow-list li.state-active a{
+    opacity: 1;
+    border-bottom: 3px solid #1BBAE1;
+}
+
+.drop-down.ui-tabview-right-icon{
+    position: absolute;
+    top: 16px;
+    height: 13px;
+    margin: auto;
+    background: #d2dce6;
+    padding: 3px;
+    line-height: .6;
+    font-size: 10px;
+    margin-left: 4px;
+    color: #132841;
+    cursor: pointer;
+    border-radius: 2px;
+    visibility: hidden; 
+}
+
+.ui-state-active .drop-down.ui-tabview-right-icon{
+    visibility: visible;
+}
+
+ul.drop-down-list {
+    position: absolute; 
+    width: 129px;
+    top: 36px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.1);
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ui-tabview .ui-tabview-nav ul.drop-down-list > li{
+    background: #d2dce6;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 8px 6px;
+    margin: 0;
+}
+
+.content-details .handle{
+    visibility: hidden;
+}
+
+.ui-tabview-panel.ui-widget-content{
+    padding: 0;
+}
+
+.ui-tabview-panel.ui-widget-content{
+    overflow: auto;
+    display: block;
+    height: 100%;
+}
+
+.ui-tabview-panel.ui-widget-content > *{
+    display: block;
+    min-width: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* <-- endOf p-tabview Overrides  */
+
+
+/* --> p-inputswitch Overrides */
+
+p-inputswitch > div {
+    width: 42px !important;
+    padding: 0 10px;
+    height: 24px;
+    border-radius: 96px;
+    border: 1px solid rgba(172,179,189,0.5);
+    background-color: #F2F4F7;
+    overflow: visible;
+}
+
+p-inputswitch > div.ui-inputswitch-checked{
+    background-color: #2DB4E7;
+}
+
+.ui-inputswitch .ui-inputswitch-on span, 
+.ui-inputswitch .ui-inputswitch-off span{
+    display: none;
+}
+
+.ui-inputswitch .ui-inputswitch-handle {
+    width: 17px !important;
+    height: 17px !important;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(172,179,189,0.5);
+    transition: .2s ease-out all;
+}
+
+.ui-inputswitch-checked .ui-inputswitch-handle{
+    left: 22px !important;
+    border: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .25);
+}
+
+.ui-inputswitch-handle{
+    left: 1px !important;
+    top: 1px !important;
+
+}
+
+p-inputswitch .ui-state-default {
+    border: 1px solid #d6d6d6;
+    background: #ffffff;
+    color: #555555;
+}
+
+/* <-- endOf p-inputswitch Overrides */
+
+
+/* --> Checkbox */
+
+.fa{
+    font-size: initial;
+}
+
+.ui-chkbox .ui-chkbox-box {
+    width: initial;
+    height: initial;
+    text-align: left;
+}
+
+.ui-chkbox .ui-chkbox-box span{
+    border: 1px solid #D2DCE6;
+    height: 14px;
+    border-radius: 2px;
+    width: 14px;
+    line-height: 1.35;
+}
+
+/* <-- Checkbox */
+
+/* --> p-accordiontab Overrides */ 
+
+.vms-accordion .ui-accordion .ui-accordion-header a{
+    text-decoration: none;
+    background: #f8fafc;
+    border: none;
+    border-bottom: 1px solid #d1dce6;
+}
+
+.vms-accordion .ui-accordion .ui-accordion-header{
+    margin-top: 0;
+}
+
+.vms-accordion .ui-accordion-header > .fa-caret-right,
+.vms-accordion .ui-accordion-header > .fa-caret-down{
+    position: absolute;
+    left: .7em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #616C7D;
+    font-size: 14px;
+}
+
+/* <-- endOf p-accordiontab */ 
+
+/* --> p-accordion */
+
+.vms-accordion{
+    display: block;
+    height: calc(100% - 40px);
+    overflow: auto;
+}
+
+.vms-accordion .ui-accordion .ui-accordion-content{
+    padding: 0;
+}
+
+.vms-accordion__body{
+    position: relative;
+    font-size: 14px;
+    color: #333A44;
+}
+
+/* <-- endOf p-accordion */
+
+/* VMS table */
+
+.vms-table .ui-datatable .ui-datatable-scrollable-body{
+    overflow-x: hidden;
+}
+
+.vms-table .ui-datatable-scrollable-header tr th {
+    background-color: #DEE3EA;
+    border-width: 0 !important;
+    color: #132841;
+    font-size: 14px !important;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: 400 !important;
+}
+
+.vms-table .ui-datatable-scrollable-body tr td{
+    transition: .2s ease-in opacity;
+    opacity: .7;
+    font-size: 14px;
+    height: 40px;
+    vertical-align: middle;
+    padding: 3px 8px 4px;
+    border: none; 
+    display: -webkit-box;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vms-table .ui-datatable-scrollable-body tr{
+    transition: .2s ease-in border;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #d1dce6;
+}
+
+.vms-table .ui-datatable-scrollable-body tr:hover{
+    border-left: 1px solid #20bae1;
+    border-right: 1px solid #20bae1;
+}
+
+.vms-table .ui-datatable-scrollable-body tr:hover td{ 
+    border-top: 1px solid #20bae1;
+    border-bottom: 1px solid #20bae1;
+    opacity: 1;
+}
+
+.vms-table .time{
+    display: block;
+    font-size: 12px;
+}
+
+.vms-table .date{
+    display: block;
+    font-size: 14px;
+}
+
+/* endOf VMS table */
